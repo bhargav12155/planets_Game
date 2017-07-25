@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9820791-EB7B-40B0-96B8-56673BA1BC5A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>ConsoleApplication2.Module1</StartupObject>
+    <RootNamespace>ConsoleApplication2</RootNamespace>
+    <AssemblyName>ConsoleApplication2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ConsoleApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ConsoleApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ConsoleApplication2.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ConsoleApplication2.exe.config" />
+    <None Include="bin\Debug\ConsoleApplication2.vshost.exe.config" />
+    <None Include="bin\Debug\ConsoleApplication2.vshost.exe.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="obj\Debug\ConsoleApplication2.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ConsoleApplication2.vbprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="www\fonts\TCB.TTF" />
+    <None Include="www\fonts\TCBI____.TTF" />
+    <None Include="www\fonts\TCCB____.TTF" />
+    <None Include="www\fonts\TCCEB.TTF" />
+    <None Include="www\fonts\TCCM____.TTF" />
+    <None Include="www\fonts\TCMI____.TTF" />
+    <None Include="www\fonts\TCM_____.TTF" />
+    <None Include="www\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ConsoleApplication2.exe" />
+    <Content Include="bin\Debug\ConsoleApplication2.pdb" />
+    <Content Include="bin\Debug\ConsoleApplication2.vshost.exe" />
+    <Content Include="bin\Debug\ConsoleApplication2.xml" />
+    <Content Include="obj\Debug\ConsoleApplication2.exe" />
+    <Content Include="obj\Debug\ConsoleApplication2.pdb" />
+    <Content Include="obj\Debug\ConsoleApplication2.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ConsoleApplication2.xml" />
+    <Content Include="www\config.xml" />
+    <Content Include="www\css\index.css" />
+    <Content Include="www\images\acOff.png" />
+    <Content Include="www\images\acOn.png" />
+    <Content Include="www\images\background.png" />
+    <Content Include="www\images\background_bathroom.png" />
+    <Content Include="www\images\background_black.png" />
+    <Content Include="www\images\background_cockpit.png" />
+    <Content Include="www\images\background_cockpit_starless.png" />
+    <Content Include="www\images\background_electric_planet.png" />
+    <Content Include="www\images\background_floor.png" />
+    <Content Include="www\images\background_gas_planet.png" />
+    <Content Include="www\images\background_hanger.png" />
+    <Content Include="www\images\background_hanger_cockpit.png" />
+    <Content Include="www\images\background_ladder.png" />
+    <Content Include="www\images\background_sky.png" />
+    <Content Include="www\images\background_splash.png" />
+    <Content Include="www\images\background_stars.png" />
+    <Content Include="www\images\background_storm_planet.png" />
+    <Content Include="www\images\basin.png" />
+    <Content Include="www\images\battery1.png" />
+    <Content Include="www\images\battery2.png" />
+    <Content Include="www\images\battery3.png" />
+    <Content Include="www\images\battery4.png" />
+    <Content Include="www\images\battery5.png" />
+    <Content Include="www\images\battery6.png" />
+    <Content Include="www\images\bighand_1.png" />
+    <Content Include="www\images\bighand_2.png" />
+    <Content Include="www\images\bighand_3.png" />
+    <Content Include="www\images\bird.png" />
+    <Content Include="www\images\blanket.png" />
+    <Content Include="www\images\blenderOff.png" />
+    <Content Include="www\images\blenderOn.png" />
+    <Content Include="www\images\boltian_pose_reg.png" />
+    <Content Include="www\images\book.png" />
+    <Content Include="www\images\bottles.png" />
+    <Content Include="www\images\brokenoutlet.png" />
+    <Content Include="www\images\can1.png" />
+    <Content Include="www\images\can2.png" />
+    <Content Include="www\images\candle.png" />
+    <Content Include="www\images\canopener.png" />
+    <Content Include="www\images\cardboardbox.png" />
+    <Content Include="www\images\cereal.png" />
+    <Content Include="www\images\chair1.png" />
+    <Content Include="www\images\chair2.png" />
+    <Content Include="www\images\charger.png" />
+    <Content Include="www\images\checkmark.png" />
+    <Content Include="www\images\click_to_continue.png" />
+    <Content Include="www\images\computerOff.png" />
+    <Content Include="www\images\computerOn.png" />
+    <Content Include="www\images\dialogue_box.png" />
+    <Content Include="www\images\dialogue_box_wide.png" />
+    <Content Include="www\images\ear1.png" />
+    <Content Include="www\images\ear2.png" />
+    <Content Include="www\images\ear3.png" />
+    <Content Include="www\images\end.png" />
+    <Content Include="www\images\end_game.png" />
+    <Content Include="www\images\exclamationpoint.png" />
+    <Content Include="www\images\eye.png" />
+    <Content Include="www\images\falling_controller.png" />
+    <Content Include="www\images\falling_lamp.png" />
+    <Content Include="www\images\falling_phone.png" />
+    <Content Include="www\images\falling_toaster.png" />
+    <Content Include="www\images\flammablegirl1.png" />
+    <Content Include="www\images\flammablegirl2.png" />
+    <Content Include="www\images\flammablegirl3.png" />
+    <Content Include="www\images\flower.png" />
+    <Content Include="www\images\fridge1Closed.png" />
+    <Content Include="www\images\fridge1Open.png" />
+    <Content Include="www\images\fridge2Closed.png" />
+    <Content Include="www\images\fridge2Open.png" />
+    <Content Include="www\images\fridge3Closed.png" />
+    <Content Include="www\images\fridge3Open.png" />
+    <Content Include="www\images\fridge4Closed.png" />
+    <Content Include="www\images\fridge4Open.png" />
+    <Content Include="www\images\furniturecord.png" />
+    <Content Include="www\images\gasian_pose_reg.png" />
+    <Content Include="www\images\grill.png" />
+    <Content Include="www\images\heart.png" />
+    <Content Include="www\images\house.png" />
+    <Content Include="www\images\instruction_box.png" />
+    <Content Include="www\images\kite.png" />
+    <Content Include="www\images\ladder.png" />
+    <Content Include="www\images\ladderbutton.png" />
+    <Content Include="www\images\ladderbutton_down.png" />
+    <Content Include="www\images\ladderruler.png" />
+    <Content Include="www\images\lampOff.png" />
+    <Content Include="www\images\lampOn.png" />
+    <Content Include="www\images\leak_dryer.png" />
+    <Content Include="www\images\leak_fireplace.png" />
+    <Content Include="www\images\leak_furnace.png" />
+    <Content Include="www\images\leak_stove.png" />
+    <Content Include="www\images\lipstick.png" />
+    <Content Include="www\images\lose_electric.png" />
+    <Content Include="www\images\lose_explode.png" />
+    <Content Include="www\images\lose_neutral.png" />
+    <Content Include="www\images\milk.png" />
+    <Content Include="www\images\nose1.png" />
+    <Content Include="www\images\nose2.png" />
+    <Content Include="www\images\nose3.png" />
+    <Content Include="www\images\noseRed.png" />
+    <Content Include="www\images\overloadedoutlet.png" />
+    <Content Include="www\images\pantonebackground.png" />
+    <Content Include="www\images\paperclip.png" />
+    <Content Include="www\images\papertowels.png" />
+    <Content Include="www\images\particle_electricity.png" />
+    <Content Include="www\images\particle_fire.png" />
+    <Content Include="www\images\penny.png" />
+    <Content Include="www\images\person1.png" />
+    <Content Include="www\images\person2.png" />
+    <Content Include="www\images\person3.png" />
+    <Content Include="www\images\person4.png" />
+    <Content Include="www\images\phone.png" />
+    <Content Include="www\images\planet_electric_reg.png" />
+    <Content Include="www\images\planet_gas_reg.png" />
+    <Content Include="www\images\planet_label_electric.png" />
+    <Content Include="www\images\planet_label_gas.png" />
+    <Content Include="www\images\planet_label_storm.png" />
+    <Content Include="www\images\planet_storm_reg.png" />
+    <Content Include="www\images\plugoutlet.png" />
+    <Content Include="www\images\powerlines.png" />
+    <Content Include="www\images\preloadBar.png" />
+    <Content Include="www\images\PSC Captain Badge trimmed.png" />
+    <Content Include="www\images\PSC_planet.png" />
+    <Content Include="www\images\pullcord.png" />
+    <Content Include="www\images\pullplug.png" />
+    <Content Include="www\images\quizdog.png" />
+    <Content Include="www\images\restart_button.png" />
+    <Content Include="www\images\rottenegg.png" />
+    <Content Include="www\images\rug.png" />
+    <Content Include="www\images\safe-t_pose_atEase.png" />
+    <Content Include="www\images\safeoutlet.png" />
+    <Content Include="www\images\skip_popup.png" />
+    <Content Include="www\images\small_milk.png" />
+    <Content Include="www\images\snake.png" />
+    <Content Include="www\images\steak.png" />
+    <Content Include="www\images\stool.png" />
+    <Content Include="www\images\stormian_pose_reg.png" />
+    <Content Include="www\images\stovetop.png" />
+    <Content Include="www\images\table.png" />
+    <Content Include="www\images\tap_spriteSheet.png" />
+    <Content Include="www\images\tap_to_start.png" />
+    <Content Include="www\images\titlescreen.png" />
+    <Content Include="www\images\tnt.png" />
+    <Content Include="www\images\tub.png" />
+    <Content Include="www\images\tvOff.png" />
+    <Content Include="www\images\tvOn.png" />
+    <Content Include="www\images\utility_belt_label.png" />
+    <Content Include="www\images\wall.png" />
+    <Content Include="www\images\waterdrop.png" />
+    <Content Include="www\images\wethands1.png" />
+    <Content Include="www\images\wethands2.png" />
+    <Content Include="www\images\wethands3.png" />
+    <Content Include="www\images\win_popup.png" />
+    <Content Include="www\images\wire_long.png" />
+    <Content Include="www\images\wire_long_spritesheet.png" />
+    <Content Include="www\images\wire_med.png" />
+    <Content Include="www\images\wire_med_spritesheet.png" />
+    <Content Include="www\images\yes.png" />
+    <Content Include="www\index.html" />
+    <Content Include="www\scripts\ElectricTrials.js" />
+    <Content Include="www\scripts\game.js" />
+    <Content Include="www\scripts\GasTrials.js" />
+    <Content Include="www\scripts\GenericTrials.js" />
+    <Content Include="www\scripts\index.js" />
+    <Content Include="www\scripts\phaser.min.js" />
+    <Content Include="www\scripts\platformOverrides.js" />
+    <Content Include="www\scripts\StormTrials.js" />
+    <Content Include="www\sounds\3days_worth_bottled_water.mp3" />
+    <Content Include="www\sounds\animals_gas_leak.mp3" />
+    <Content Include="www\sounds\a_gas_leak_can.mp3" />
+    <Content Include="www\sounds\a_gas_leak_hissing.mp3" />
+    <Content Include="www\sounds\a_safe_outlet.mp3" />
+    <Content Include="www\sounds\camera_click.mp3" />
+    <Content Include="www\sounds\carefully_drag_kite %281%29.mp3" />
+    <Content Include="www\sounds\carefully_drag_kite.mp3" />
+    <Content Include="www\sounds\celebration.mp3" />
+    <Content Include="www\sounds\charge_your_phone.mp3" />
+    <Content Include="www\sounds\cheering_original.mp3" />
+    <Content Include="www\sounds\chimes.mp3" />
+    <Content Include="www\sounds\close_all_freezers.mp3" />
+    <Content Include="www\sounds\close_regrigirators.mp3" />
+    <Content Include="www\sounds\collect_water.mp3" />
+    <Content Include="www\sounds\congrats.mp3" />
+    <Content Include="www\sounds\congrats_all3.mp3" />
+    <Content Include="www\sounds\congrats_electric.mp3" />
+    <Content Include="www\sounds\congrats_gas.mp3" />
+    <Content Include="www\sounds\congrats_thunder.mp3" />
+    <Content Include="www\sounds\congratulations_thunders.mp3" />
+    <Content Include="www\sounds\continue.mp3" />
+    <Content Include="www\sounds\create_pantry.mp3" />
+    <Content Include="www\sounds\drag_all_objects_to_center.mp3" />
+    <Content Include="www\sounds\drag_basin.mp3" />
+    <Content Include="www\sounds\drag_candle.mp3" />
+    <Content Include="www\sounds\drag_charger.mp3" />
+    <Content Include="www\sounds\drag_everyone.mp3" />
+    <Content Include="www\sounds\drag_furniture.mp3" />
+    <Content Include="www\sounds\drag_grill.mp3" />
+    <Content Include="www\sounds\drag_hand.mp3" />
+    <Content Include="www\sounds\drag_hands.mp3" />
+    <Content Include="www\sounds\drag_object.mp3" />
+    <Content Include="www\sounds\drag_tub.mp3" />
+    <Content Include="www\sounds\during_power.mp3" />
+    <Content Include="www\sounds\electric_cound.mp3" />
+    <Content Include="www\sounds\ending.mp3" />
+    <Content Include="www\sounds\explosion.mp3" />
+    <Content Include="www\sounds\Fireworks, rocket whistle Sound Effect.mp3" />
+    <Content Include="www\sounds\flowers.mp3" />
+    <Content Include="www\sounds\food_from_spoiling.mp3" />
+    <Content Include="www\sounds\gas_sound.mp3" />
+    <Content Include="www\sounds\gather_batteries.mp3" />
+    <Content Include="www\sounds\greetings_clumpus.mp3" />
+    <Content Include="www\sounds\guide.mp3" />
+    <Content Include="www\sounds\hello.mp3" />
+    <Content Include="www\sounds\if_you_believe_poweroutrage.mp3" />
+    <Content Include="www\sounds\if_you_ever_suspect.mp3" />
+    <Content Include="www\sounds\intro_thunder.mp3" />
+    <Content Include="www\sounds\in_case_of_power_outrage.mp3" />
+    <Content Include="www\sounds\just_having.mp3" />
+    <Content Include="www\sounds\keep_candle_away.mp3" />
+    <Content Include="www\sounds\keep_the_area.mp3" />
+    <Content Include="www\sounds\keep_the_candle.mp3" />
+    <Content Include="www\sounds\keep_wet_hands.mp3" />
+    <Content Include="www\sounds\looks_like_shocks.mp3" />
+    <Content Include="www\sounds\loseelectric.mp3" />
+    <Content Include="www\sounds\loseexplode.mp3" />
+    <Content Include="www\sounds\loseneutral.mp3" />
+    <Content Include="www\sounds\minimal_problems_gas.mp3" />
+    <Content Include="www\sounds\move_bath.mp3" />
+    <Content Include="www\sounds\move_kite.mp3" />
+    <Content Include="www\sounds\move_ladder.mp3" />
+    <Content Include="www\sounds\move_the.mp3" />
+    <Content Include="www\sounds\move_the_furn.mp3" />
+    <Content Include="www\sounds\natural_gas_has_no.mp3" />
+    <Content Include="www\sounds\never_fly_kite.mp3" />
+    <Content Include="www\sounds\nose - Copy.mp3" />
+    <Content Include="www\sounds\nose.mp3" />
+    <Content Include="www\sounds\Perfect_score_gas.mp3" />
+    <Content Include="www\sounds\powersout.mp3" />
+    <Content Include="www\sounds\powersout_fridge.mp3" />
+    <Content Include="www\sounds\Power_Up_Ray-Mike_Koenig-800933783.mp3" />
+    <Content Include="www\sounds\press_button.mp3" />
+    <Content Include="www\sounds\qucikle_drag_batteries.mp3" />
+    <Content Include="www\sounds\recording.mp3" />
+    <Content Include="www\sounds\remove_clutter.mp3" />
+    <Content Include="www\sounds\select_planet.mp3" />
+    <Content Include="www\sounds\shocks_intro.mp3" />
+    <Content Include="www\sounds\show_an.mp3" />
+    <Content Include="www\sounds\sometimes_gas_leak.mp3" />
+    <Content Include="www\sounds\spark.mp3" />
+    <Content Include="www\sounds\stock_up.mp3" />
+    <Content Include="www\sounds\tap_on_all.mp3" />
+    <Content Include="www\sounds\tap_on_all_elect.mp3" />
+    <Content Include="www\sounds\thete_are_3.mp3" />
+    <Content Include="www\sounds\the_best_way.mp3" />
+    <Content Include="www\sounds\the_smell.mp3" />
+    <Content Include="www\sounds\thunders.mp3" />
+    <Content Include="www\sounds\thunder_helm_intro.mp3" />
+    <Content Include="www\sounds\to_be_officially_certified.mp3" />
+    <Content Include="www\sounds\to_prepare_for_your_power.mp3" />
+    <Content Include="www\sounds\turn_them_off.mp3" />
+    <Content Include="www\sounds\unplug_all_majorapplicances.mp3" />
+    <Content Include="www\sounds\use_the_nose.mp3" />
+    <Content Include="www\sounds\using_an.mp3" />
+    <Content Include="www\sounds\wall_outlets.mp3" />
+    <Content Include="www\sounds\wall_outlets_fem.mp3" />
+    <Content Include="www\sounds\water_is_really.mp3" />
+    <Content Include="www\sounds\welcome.mp3" />
+    <Content Include="www\sounds\weve_arrived.mp3" />
+    <Content Include="www\sounds\which_of_these.mp3" />
+    <Content Include="www\sounds\which_outlets.mp3" />
+    <Content Include="www\sounds\which_smells.mp3" />
+    <Content Include="www\sounds\whoa_shocks.mp3" />
+    <Content Include="www\sounds\your_training.mp3" />
+    <Content Include="www\sounds\you_are_given.mp3" />
+    <Content Include="www\sounds\you_can_use_candles.mp3" />
+    <Content Include="www\sounds\you_completed_gas.mp3" />
+    <Content Include="www\sounds\you_completed_thunder.mp3" />
+    <Content Include="www\sounds\you_had_gas.mp3" />
+    <Content Include="www\sounds\you_made_gas.mp3" />
+    <Content Include="www\sounds\you_made_thunder.mp3" />
+    <Content Include="www\sounds\you_messed_shocks.mp3" />
+    <Content Include="www\sounds\you_seem_gas.mp3" />
+    <Content Include="www\sounds\you_seem_thunder.mp3" />
+    <Content Include="www\sounds\you_shouldnt.mp3" />
+    <Content Include="www\sounds\you_should_keep.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="www\icons\" />
+    <Folder Include="www\screens\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
